@@ -1,11 +1,11 @@
-/* Basic reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -14,7 +14,7 @@ body {
     padding: 20px;
 }
 
-/* Header */
+
 header {
     background-color: #2C6A4F; /* Green for eco-friendly vibe */
     color: white;
@@ -26,7 +26,7 @@ header h1 {
     font-size: 36px;
 }
 
-/* Navigation */
+
 nav ul {
     list-style-type: none;
     text-align: center;
@@ -48,7 +48,7 @@ nav ul li a:hover {
     color: #A1D99B; /* Light green for hover effect */
 }
 
-/* Hero Section */
+
 .hero {
     background-color: #A1D99B; /* Light green */
     color: white;
@@ -78,7 +78,7 @@ nav ul li a:hover {
     background-color: #A1D99B; /* Light green for hover */
 }
 
-/* Product Section */
+
 .products {
     display: flex;
     flex-wrap: wrap;
@@ -133,7 +133,7 @@ nav ul li a:hover {
     color: white;
 }
 
-/* Footer */
+
 footer {
     background-color: #2C6A4F;
     color: white;
@@ -146,7 +146,7 @@ footer p {
     font-size: 16px;
 }
 
-/* Responsive Design for Smaller Screens */
+
 @media screen and (max-width: 768px) {
     .products {
         flex-direction: column;
