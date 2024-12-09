@@ -16,7 +16,7 @@ body {
 
 
 header {
-    background-color: #2C6A4F; /* Green for eco-friendly vibe */
+    background-color: #2C6A4F; 
     color: white;
     padding: 15px;
     text-align: center;
@@ -45,12 +45,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #A1D99B; /* Light green for hover effect */
+    color: #A1D99B; 
 }
 
 
 .hero {
-    background-color: #A1D99B; /* Light green */
+    background-color: #A1D99B; 
     color: white;
     text-align: center;
     padding: 50px 20px;
@@ -75,7 +75,7 @@ nav ul li a:hover {
 }
 
 .hero .cta:hover {
-    background-color: #A1D99B; /* Light green for hover */
+    background-color: #A1D99B; 
 }
 
 
