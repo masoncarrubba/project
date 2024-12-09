@@ -1,4 +1,4 @@
-/* General Reset */
+/* Resetting default margin and padding for all elements */
 * {
     margin: 0;
     padding: 0;
@@ -7,130 +7,119 @@
 
 /* Body styles */
 body {
-    font-family: Arial, sans-serif; /* Font style */
-    background-color: #f4f4f4; /* Light gray background */
-    color: #333; /* Dark gray text */
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background color */
+    color: #333; /* Dark text color for readability */
+    line-height: 1.6; /* Adds space between lines of text */
+    padding: 20px; /* Adds space around the content */
 }
 
-/* Header */
+/* Header styles */
 header {
-    background-color: #2C6A4F; /* Green color */
+    background-color: #2C6A4F; /* Dark green background */
     color: white; /* White text */
-    text-align: center; /* Center the text */
-    padding: 20px;
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center-aligns the header text */
 }
 
+/* Header title */
 header h1 {
-    font-size: 36px; /* Large title text */
+    font-size: 36px;
 }
 
-/* Navigation */
+/* Navigation menu styles */
 nav ul {
-    list-style-type: none; /* Remove bullets */
-    text-align: center; /* Center align the navigation */
-    padding: 10px 0;
+    list-style-type: none; /* Removes default list styling */
+    text-align: center; /* Centers the navigation items */
+    margin-top: 10px;
 }
 
 nav ul li {
-    display: inline-block; /* Display items in a line */
-    margin: 0 20px; /* Space out the list items */
+    display: inline; /* Makes the list items horizontal */
+    margin: 0 15px; /* Adds space between the links */
 }
 
 nav ul li a {
-    text-decoration: none; /* Remove underline from links */
-    color: white; /* White text */
-    font-size: 18px; /* Medium text size */
-}
-
-nav ul li a:hover {
-    color: #A1D99B; /* Change color when hovering */
-}
-
-/* Hero Section */
-.hero {
-    background-color: #A1D99B; /* Light green background */
-    color: white; /* White text */
-    text-align: center; /* Center the text */
-    padding: 40px 20px; /* Add space around the content */
-    margin-top: 20px;
-}
-
-.hero h2 {
-    font-size: 30px; /* Medium heading size */
-    margin-bottom: 10px; /* Add space below the heading */
-}
-
-.hero p {
-    font-size: 18px; /* Standard paragraph size */
-}
-
-/* Button in the Hero Section */
-.hero .cta {
-    background-color: #2C6A4F; /* Dark green */
-    color: white; /* White text */
-    padding: 10px 20px; /* Add padding inside the button */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Removes underlines from links */
+    color: white; /* White text color */
     font-size: 18px;
 }
 
-.hero .cta:hover {
-    background-color: #A1D99B; /* Change to light green on hover */
+nav ul li a:hover {
+    color: #A1D99B; /* Light green color on hover */
 }
 
-/* Mission Section */
+/* Hero section styles */
+.hero {
+    background-color: #A1D99B; /* Light green background */
+    color: white; /* White text */
+    text-align: center; /* Centers text */
+    padding: 50px 20px; /* Adds space inside the section */
+}
+
+.hero img {
+    width: 100%; /* Makes the image fill the container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    margin-bottom: 20px; /* Adds space below the image */
+}
+
+.hero h2 {
+    font-size: 36px; /* Larger heading */
+    margin-bottom: 10px; /* Adds space below the heading */
+}
+
+.hero p {
+    font-size: 18px; /* Medium-sized paragraph */
+}
+
+/* Mission section styles */
 .mission {
-    margin-top: 40px; /* Add space above */
+    margin-top: 30px;
 }
 
 .mission h2 {
-    font-size: 26px; /* Medium heading size */
-    margin-bottom: 20px; /* Add space below the heading */
+    font-size: 28px; /* Slightly smaller than the hero heading */
+    text-align: center; /* Centers the heading */
+    margin-bottom: 15px; /* Adds space below the heading */
 }
 
 .mission p {
-    font-size: 18px; /* Standard paragraph size */
-    line-height: 1.6; /* Space between lines for readability */
+    font-size: 18px; /* Paragraph text */
+    text-align: center; /* Centers the paragraph text */
+    max-width: 800px; /* Limits the width of the paragraph */
+    margin: 0 auto; /* Centers the paragraph itself */
 }
 
-/* Footer */
+/* Footer styles */
 footer {
-    background-color: #2C6A4F; /* Green footer */
+    background-color: #2C6A4F; /* Dark green background */
     color: white; /* White text */
-    text-align: center; /* Center the footer content */
-    padding: 20px;
-    margin-top: 40px;
+    text-align: center; /* Centers the footer content */
+    padding: 20px 0; /* Padding for top and bottom */
+    margin-top: 40px; /* Adds space above the footer */
 }
 
 footer img {
-    width: 50px; /* Set size of the Instagram logo */
-    margin-top: 10px; /* Add space above the logo */
+    width: 100px; /* Instagram icon size */
+    margin-top: 10px; /* Adds space above the icon */
 }
 
-/* Responsive Design */
+/* Media Query for Mobile Devices */
 @media screen and (max-width: 768px) {
-    /* Stack navigation items vertically on small screens */
-    nav ul li {
-        display: block;
-        margin: 10px 0;
+    header h1 {
+        font-size: 28px; /* Smaller header on mobile */
     }
 
-    /* Adjust Hero text size for smaller screens */
     .hero h2 {
-        font-size: 24px;
+        font-size: 28px; /* Smaller hero title */
     }
 
     .hero p {
-        font-size: 16px;
-    }
-
-    /* Adjust Mission Section text size */
-    .mission h2 {
-        font-size: 22px;
+        font-size: 16px; /* Smaller text in hero section */
     }
 
     .mission p {
-        font-size: 16px;
+        font-size: 16px; /* Smaller mission text */
     }
 }
