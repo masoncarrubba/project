@@ -1,10 +1,8 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     font-family: Arial, sans-serif;
@@ -13,7 +11,6 @@ body {
     line-height: 1.5;
     padding: 20px;
 }
-
 
 header {
     background-color: #2C6A4F; 
@@ -25,7 +22,6 @@ header {
 header h1 {
     font-size: 36px;
 }
-
 
 nav ul {
     list-style-type: none;
@@ -48,7 +44,6 @@ nav ul li a:hover {
     color: #A1D99B; 
 }
 
-
 .hero {
     background-color: #A1D99B; 
     color: white;
@@ -67,7 +62,7 @@ nav ul li a:hover {
 
 .hero .cta {
     background-color: #2C6A4F;
-    color: light brown;
+    color: #D2691E; /* Dark brown color */
     padding: 10px 20px;
     text-decoration: none;
     font-size: 20px;
@@ -76,8 +71,8 @@ nav ul li a:hover {
 
 .hero .cta:hover {
     background-color: #A1D99B; 
+    color: white; /* Change text color on hover */
 }
-
 
 .products {
     display: flex;
@@ -133,7 +128,6 @@ nav ul li a:hover {
     color: white;
 }
 
-
 footer {
     background-color: #2C6A4F;
     color: white;
@@ -145,7 +139,6 @@ footer {
 footer p {
     font-size: 16px;
 }
-
 
 @media screen and (max-width: 768px) {
     .products {
