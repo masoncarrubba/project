@@ -1,11 +1,9 @@
-/* Reset default margins and paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -13,7 +11,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header styling */
 header {
     background-color: #2C6A4F;
     color: white;
@@ -25,7 +22,6 @@ header h1 {
     font-size: 36px;
 }
 
-/* Navigation styling */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -46,7 +42,6 @@ nav ul li a:hover {
     color: #A1D99B;
 }
 
-/* Hero section styling */
 .hero {
     background-color: #A1D99B;
     color: white;
@@ -72,7 +67,6 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-/* Mission section styling */
 .mission {
     padding: 20px;
     background-color: white;
@@ -90,7 +84,6 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
-/* Footer styling */
 footer {
     background-color: #2C6A4F;
     color: white;
@@ -104,7 +97,6 @@ footer img {
     height: auto;
 }
 
-/* Mobile responsiveness */
 @media screen and (max-width: 768px) {
     nav ul {
         display: flex;
