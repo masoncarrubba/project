@@ -1,125 +1,136 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Light grey background */
-    color: #339933;
+    font-family: Arial, sans-serif; /* Font style */
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text */
     padding: 20px;
 }
 
+/* Header */
 header {
-    background-color: #2C6A4F; 
-    color: white;
-    text-align: center;
+    background-color: #2C6A4F; /* Green color */
+    color: white; /* White text */
+    text-align: center; /* Center the text */
     padding: 20px;
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 36px; /* Large title text */
 }
 
+/* Navigation */
 nav ul {
-    list-style-type: none; 
-    text-align: center;
-    margin-top: 10px;
+    list-style-type: none; /* Remove bullets */
+    text-align: center; /* Center align the navigation */
+    padding: 10px 0;
 }
 
 nav ul li {
-    display: inline-block; 
-    margin: 0 15px; 
+    display: inline-block; /* Display items in a line */
+    margin: 0 20px; /* Space out the list items */
 }
 
 nav ul li a {
-    text-decoration: none; 
-    color: white;
-    font-size: 18px;
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text */
+    font-size: 18px; /* Medium text size */
 }
 
 nav ul li a:hover {
-    color: #A1D99B; 
+    color: #A1D99B; /* Change color when hovering */
 }
 
+/* Hero Section */
 .hero {
-    background-color: #A1D99B; 
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
+    background-color: #A1D99B; /* Light green background */
+    color: white; /* White text */
+    text-align: center; /* Center the text */
+    padding: 40px 20px; /* Add space around the content */
     margin-top: 20px;
 }
 
 .hero h2 {
-    font-size: 35px;
-    margin-bottom: 10px;
+    font-size: 30px; /* Medium heading size */
+    margin-bottom: 10px; /* Add space below the heading */
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 18px; /* Standard paragraph size */
 }
 
+/* Button in the Hero Section */
 .hero .cta {
-    background-color: #2C6A4F; /* Green color */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
+    background-color: #2C6A4F; /* Dark green */
+    color: white; /* White text */
+    padding: 10px 20px; /* Add padding inside the button */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
     font-size: 18px;
-    border-radius: 5px;
 }
 
 .hero .cta:hover {
-    background-color: #A1D99B; /* Light green on hover */
+    background-color: #A1D99B; /* Change to light green on hover */
 }
 
+/* Mission Section */
 .mission {
-    margin-top: 40px;
+    margin-top: 40px; /* Add space above */
 }
 
 .mission h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 26px; /* Medium heading size */
+    margin-bottom: 20px; /* Add space below the heading */
 }
 
 .mission p {
-    font-size: 18px;
-    line-height: 1.6; /* Line spacing for readability */
+    font-size: 18px; /* Standard paragraph size */
+    line-height: 1.6; /* Space between lines for readability */
 }
 
+/* Footer */
 footer {
-    background-color: #2C6A4F; /* Green color */
-    color: white;
-    text-align: center;
+    background-color: #2C6A4F; /* Green footer */
+    color: white; /* White text */
+    text-align: center; /* Center the footer content */
     padding: 20px;
     margin-top: 40px;
 }
 
-footer .footer-icon {
-    width: 50px; /* Instagram logo size */
-    margin-top: 10px;
+footer img {
+    width: 50px; /* Set size of the Instagram logo */
+    margin-top: 10px; /* Add space above the logo */
 }
 
+/* Responsive Design */
 @media screen and (max-width: 768px) {
-    .hero h2 {
-        font-size: 28px;
+    /* Stack navigation items vertically on small screens */
+    nav ul li {
+        display: block;
+        margin: 10px 0;
     }
 
-    .mission h2 {
+    /* Adjust Hero text size for smaller screens */
+    .hero h2 {
         font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* Adjust Mission Section text size */
+    .mission h2 {
+        font-size: 22px;
     }
 
     .mission p {
         font-size: 16px;
-    }
-
-    nav ul li {
-        display: block; 
-        margin: 10px 0;
-    }
-
-    .hero .cta {
-        padding: 15px 30px;
-        font-size: 20px;
     }
 }
