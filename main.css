@@ -6,118 +6,120 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #339933;
-    line-height: 1.6;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text */
+    padding: 20px;
 }
 
 header {
-    background-color: #2C6A4F;
+    background-color: #2C6A4F; /* Green color */
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
 }
 
 header h1 {
-    font-size: 36px;
+    font-size: 40px;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Removes bullets from list */
+    text-align: center;
+    margin-top: 10px;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block; /* Horizontal list items */
+    margin: 0 15px; /* Spacing between items */
 }
 
 nav ul li a {
-    text-decoration: none;
+    text-decoration: none; /* Remove underline */
     color: white;
     font-size: 18px;
 }
 
 nav ul li a:hover {
-    color: #A1D99B;
+    color: #A1D99B; /* Light green color on hover */
 }
 
 .hero {
-    background-color: #A1D99B;
+    background-color: #A1D99B; /* Light green */
     color: white;
     text-align: center;
-    padding: 50px 20px;
-}
-
-.hero img {
-    width: 80%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    padding: 40px 20px;
+    margin-top: 20px;
 }
 
 .hero h2 {
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 10px;
 }
 
 .hero p {
     font-size: 18px;
-    margin-bottom: 20px;
+}
+
+.hero .cta {
+    background-color: #2C6A4F; /* Green color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.hero .cta:hover {
+    background-color: #A1D99B; /* Light green on hover */
 }
 
 .mission {
-    padding: 20px;
-    background-color: white;
-    color: #333;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .mission h2 {
     font-size: 28px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .mission p {
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.6; /* Line spacing for readability */
 }
 
 footer {
-    background-color: #2C6A4F;
+    background-color: #2C6A4F; /* Green color */
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
 }
 
-footer img {
-    width: 40px;
-    height: auto;
+footer .footer-icon {
+    width: 50px; /* Instagram logo size */
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 768px) {
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
     .hero h2 {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .mission h2 {
         font-size: 24px;
     }
 
-    .hero img {
-        width: 100%;
-        margin-bottom: 20px;
+    .mission p {
+        font-size: 16px;
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation links vertically on small screens */
+        margin: 10px 0;
+    }
+
+    .hero .cta {
+        padding: 15px 30px;
+        font-size: 20px;
     }
 }
